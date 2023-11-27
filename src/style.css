@@ -153,3 +153,36 @@ a:hover {
   text-decoration: underline;
   color: black;
 }
+
+.weather-wind {
+  width: 60px;
+  padding: 0 auto;
+}
+
+.weather-rain {
+  width: 60px;
+  padding: 0 auto;
+}
+
+.weather-cloudy {
+  width: 60px;
+  padding: 0 auto;
+}
+.forecast {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0 auto;
+
+  overflow: hidden;
+  text-align: center;
+}
+.forecast li {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+hr{
+    opacity: 0.3;
+    styl
+}
