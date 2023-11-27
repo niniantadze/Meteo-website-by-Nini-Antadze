@@ -36,7 +36,7 @@ header {
   height: 30px;
   font-family: "Lato", sans-serif;
   font-size: 16px;
-  background-color: rgb(141, 218, 253);
+  background-color: rgba(141, 218, 253, 0.8);
   font-weight: bolder;
   color: black;
   padding: 20px auto;
@@ -60,4 +60,14 @@ header {
   font-size: 18px;
   margin: 30px auto;
   color: rgb(0, 76, 106);
+}
+
+main {
+  background: rgba(225, 243, 244, 0.7);
+  text-align: center;
+  max-width: 800px;
+  border-radius: 20px;
+  box-shadow: 2px 8px 23px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto;
 }
