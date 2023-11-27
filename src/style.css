@@ -16,6 +16,7 @@ header {
   box-shadow: 2px 8px 23px rgba(0, 0, 0, 0.2);
 }
 .enterCity {
+  box-shadow: 2px 8px 23px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background: rgb(243, 243, 243);
   border: none;
@@ -188,6 +189,8 @@ hr {
 }
 
 .forecast-container {
+  box-shadow: 2px 8px 23px rgba(0, 0, 0, 0.2);
+
   border-radius: 20px;
   max-width: 900px;
   margin: 0 auto;
