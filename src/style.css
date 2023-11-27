@@ -17,7 +17,7 @@ header {
 }
 .enterCity {
   border-radius: 4px;
-  background: white;
+  background: rgb(243, 243, 243);
   border: none;
   width: 200px;
   height: 30px;
