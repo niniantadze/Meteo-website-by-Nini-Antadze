@@ -1,4 +1,3 @@
-alert("hello world");
 let searchFormElement = document.querySelector("#search-city");
 
 function handleSearchSubmit(event) {
