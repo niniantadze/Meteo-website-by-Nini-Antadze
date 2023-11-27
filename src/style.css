@@ -67,7 +67,8 @@ header {
 main {
   background: rgba(225, 243, 244, 0.7);
   text-align: center;
-  max-width: 800px;
+  max-width: 650px;
+  max-height: 400px;
   border-radius: 20px;
   box-shadow: 2px 8px 23px rgba(0, 0, 0, 0.2);
   display: block;
@@ -99,23 +100,23 @@ h1 {
   display: block;
   width: 200px;
   float: left;
-  margin: 30px 40px;
+  margin: 50px 20px;
   padding: 0 auto;
 }
 
 .wind-icon {
-  width: 35px;
+  width: 40px;
   margin-left: auto;
   margin-right: auto;
 }
 .humidity-icon {
-  width: 35px;
+  width: 40px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .snowflake-icon {
-  width: 35px;
+  width: 40px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -128,7 +129,11 @@ h1 {
 }
 
 li {
-  display: inline-block;
-  text-align: center;
+  display: inline-block; /* Use inline-block to make the list items appear in a row */
+  vertical-align: top; /* Align items to the top to center them vertically */
+  margin: 0 auto; /* Center the list items horizontally */
   padding: 40px 28px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 200;
 }
