@@ -141,6 +141,7 @@ li {
 footer {
   text-align: center;
   font-size: 18px;
+  padding: 10px;
 }
 a {
   color: rgb(0, 76, 106);
@@ -182,7 +183,18 @@ a:hover {
   font-weight: 400;
 }
 
-hr{
-    opacity: 0.3;
-    styl
+hr {
+  opacity: 0.3;
+}
+
+.forecast-container {
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px auto;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgba(246, 181, 102, 0.3) 0%,
+    rgba(255, 246, 225, 0.3) 90%
+  );
 }
