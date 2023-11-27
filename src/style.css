@@ -55,10 +55,12 @@ header {
   margin: 30px auto;
   color: rgb(0, 0, 0);
 }
+
 .date {
+  display: block;
   text-align: center;
   font-size: 18px;
-  margin: 30px auto;
+  margin: 10px auto;
   color: rgb(0, 76, 106);
 }
 
@@ -70,4 +72,13 @@ main {
   box-shadow: 2px 8px 23px rgba(0, 0, 0, 0.2);
   display: block;
   margin: 0 auto;
+}
+#main-icon {
+  width: 150px;
+  float: left;
+  margin: 30px 40px;
+}
+
+ul {
+  list-style-type: none;
 }
