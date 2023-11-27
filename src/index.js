@@ -19,3 +19,5 @@ function handleSearchSubmit(event) {
 }
 let searchFormElement = document.querySelector("#search-city");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
+
+searchCity("Warsaw");
