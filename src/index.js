@@ -1,6 +1,8 @@
 function updateWeather(response) {
   let todayTemperature = document.querySelector("#today-temperature");
   todayTemperature.innerHTML = Math.round(response.data.temperature.current);
+  let h1 = document.querySelector("h1");
+  h1.innerHTML = response.data.city;
 }
 
 function searchCity(city) {
@@ -12,8 +14,7 @@ function searchCity(city) {
 function handleSearchSubmit(event) {
   event.preventDefault();
   let cityInput = document.querySelector("#city-input");
-  let h1 = document.querySelector("h1");
-  h1.innerHTML = cityInput.value;
+
   searchCity(cityInput.value);
 }
 let searchFormElement = document.querySelector("#search-city");
