@@ -28,7 +28,7 @@
 
       <div>
         <span class="weekday">Monday</span> <br />
-        <span class="date"> 27 Nov 17:44</span>
+        <span class="date" id="date-today"> 27 Nov 17:44</span>
       </div>
     </header>
 
@@ -36,12 +36,13 @@
       <img src="img/15063833911636261940.svg" alt="snowflakes" id="main-icon" />
       <h1></h1>
       <div class="todayweather" id="today-temperature">°C</div>
-      <div class="todayinfo">Gentle snowfall 🌨️</div>
+      <div class="todayinfo" id="today-info">Gentle snowfall 🌨️</div>
 
       <ul class="mainUl">
         <li class="today1">
           <img src="/img/free_icon_1.svg" alt="wind" class="wind-icon" />
-          <div>Wind</div>
+          <div id="today-wind"></div>
+          <span>km/h</span>
         </li>
         <li class="today2">
           <img
@@ -49,15 +50,16 @@
             alt="humidity drop"
             class="humidity-icon"
           />
-          <div>Humidity</div>
+          <div id="today-humidity"></div>
+          %
         </li>
         <li class="today3">
           <img
-            src="/img/14245209081557740373.svg"
+            src="/img/pressure icon.svg"
             alt="Precipitation icon"
             class="snowflake-icon"
           />
-          <div>Precipitation</div>
+          <div id="today-pressure">Pressure</div>
         </li>
       </ul>
     </main>
