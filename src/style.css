@@ -137,3 +137,19 @@ li {
   font-style: italic;
   font-weight: 200;
 }
+
+footer {
+  text-align: center;
+  font-size: 18px;
+}
+a {
+  color: rgb(0, 76, 106);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 150ms ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: black;
+}
