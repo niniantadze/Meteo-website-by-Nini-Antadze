@@ -73,12 +73,62 @@ main {
   display: block;
   margin: 0 auto;
 }
-#main-icon {
-  width: 150px;
-  float: left;
-  margin: 30px 40px;
+h1 {
+  text-align: center;
+  font-size: 70px;
+  padding-top: 30px;
+  font-weight: 500;
+  margin: 0 auto;
+}
+.todayweather {
+  font-size: 40px;
+  padding: 0 auto;
+  text-align: center;
+  margin: 0 auto;
+}
+.todayinfo {
+  padding: 0 auto;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 200;
+  font-style: italic;
 }
 
-ul {
+#main-icon {
+  display: block;
+  width: 200px;
+  float: left;
+  margin: 30px 40px;
+  padding: 0 auto;
+}
+
+.wind-icon {
+  width: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.humidity-icon {
+  width: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.snowflake-icon {
+  width: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mainUl {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  text-align: center;
+  padding: 40px 28px;
 }
