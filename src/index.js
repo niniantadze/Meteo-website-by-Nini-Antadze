@@ -1,14 +1,16 @@
 function updateWeather(response) {
   let todayTemperature = document.querySelector("#today-temperature");
-  todayTemperature.innerHTML = Math.round(response.data.temperature.current);
+  todayTemperature.innerHTML = `${Math.round(
+    response.data.temperature.current
+  )}°C`;
   let h1 = document.querySelector("h1");
   h1.innerHTML = response.data.city;
   let todayInfo = document.querySelector("#today-info");
   todayInfo.innerHTML = response.data.condition.description;
   let todaywind = document.querySelector("#today-wind");
-  todaywind.innerHTML = Math.round(response.data.wind.speed);
+  todaywind.innerHTML = `${Math.round(response.data.wind.speed)} km/h`;
   let todayhumidity = document.querySelector("#today-humidity");
-  todayhumidity.innerHTML = response.data.temperature.humidity;
+  todayhumidity.innerHTML = `${response.data.temperature.humidity} %`;
   let todaypressure = document.querySelector("#today-pressure");
   todaypressure.innerHTML = response.data.temperature.pressure;
 }
