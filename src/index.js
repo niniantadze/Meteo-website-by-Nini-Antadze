@@ -9,6 +9,8 @@ function updateWeather(response) {
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
 
+  let icon = document.querySelector("#icon");
+  icon.innerHTML = `<img src="${response.data.condition.icon_url}" class=weather-app-icon/>`;
   days = [
     "Sunday",
     "Monday",
@@ -50,7 +52,7 @@ function updateWeather(response) {
 }
 
 function searchCity(city) {
-  let apiKey = "b2a5adcct04b33178913oc335f405433";
+  let apiKey = "eb214ccaa33987f7248o49846e082tab";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&unit=metric`;
   axios(apiUrl).then(updateWeather);
 }
