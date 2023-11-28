@@ -18,6 +18,20 @@ function updateWeather(response) {
     "Friday",
     "Saturday",
   ];
+  months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
 
   todayTemperature.innerHTML = `${Math.round(
     response.data.temperature.current
@@ -31,6 +45,8 @@ function updateWeather(response) {
   timeElement.innerHTML = `${
     days[date.getDay()]
   } ${date.getHours()}:${date.getMinutes()}`;
+  let monthDate = document.querySelector("#month-date");
+  monthDate.innerHTML = `${date.getDate()} ${months[date.getMonth()]} `;
 }
 
 function searchCity(city) {
