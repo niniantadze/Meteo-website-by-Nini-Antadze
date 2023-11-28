@@ -1,18 +1,36 @@
 function updateWeather(response) {
   let todayTemperature = document.querySelector("#today-temperature");
+  let h1 = document.querySelector("h1");
+
+  let todayInfo = document.querySelector("#today-info");
+  let todaywind = document.querySelector("#today-wind");
+  let todayhumidity = document.querySelector("#today-humidity");
+  let todaypressure = document.querySelector("#today-pressure");
+  let timeElement = document.querySelector("#time");
+  let date = new Date(response.data.time * 1000);
+
+  days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
   todayTemperature.innerHTML = `${Math.round(
     response.data.temperature.current
   )}°C`;
-  let h1 = document.querySelector("h1");
   h1.innerHTML = response.data.city;
-  let todayInfo = document.querySelector("#today-info");
+
   todayInfo.innerHTML = response.data.condition.description;
-  let todaywind = document.querySelector("#today-wind");
   todaywind.innerHTML = `${Math.round(response.data.wind.speed)} km/h`;
-  let todayhumidity = document.querySelector("#today-humidity");
   todayhumidity.innerHTML = `${response.data.temperature.humidity} %`;
-  let todaypressure = document.querySelector("#today-pressure");
   todaypressure.innerHTML = response.data.temperature.pressure;
+  timeElement.innerHTML = `${
+    days[date.getDay()]
+  } ${date.getHours()}:${date.getMinutes()}`;
 }
 
 function searchCity(city) {
