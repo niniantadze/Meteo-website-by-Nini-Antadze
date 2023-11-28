@@ -68,41 +68,44 @@ main {
   display: flex;
   background: rgba(225, 243, 244, 0.7);
   text-align: center;
-  max-width: 650px;
-  max-height: 400px;
+  max-width: 600px;
+  max-height: 600px;
   border-radius: 20px;
   box-shadow: 2px 8px 23px rgba(0, 0, 0, 0.2);
   display: block;
   margin: 0 auto;
 }
 h1 {
-  text-align: center;
-  font-size: 70px;
-  padding-top: 30px;
-  font-weight: 500;
-  margin: 0 auto;
+  margin: 40px 10px 20px 10px;
+  padding: 40px;
+  padding-bottom: 10px;
+  font-size: 80px;
+  line-height: 48px;
 }
-.today-weather {
-  font-size: 40px;
-  padding: 0 auto;
+#whole-today-temperature {
+  display: flex wrap;
+  margin-top: 6px;
+  font-size: 34px;
+  padding: 5px auto;
   text-align: center;
-  margin: 0 auto;
+  margin: 20px 90px;
+}
+#today-temperature {
+  padding: 0 auto;
+  font-size: 80px;
+  line-height: 100px;
+  font-weight: bold;
 }
 .todayinfo {
-  padding: 0 auto;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 20px;
-  font-weight: 200;
-  font-style: italic;
+  font-size: 32px;
+  color: rgba(39, 33, 66, 0.4);
+  line-height: 24px;
+  font-weight: 500;
 }
 
 #main-icon {
-  display: block;
-  width: 150px;
-  float: left;
-  margin: 50px 20px;
-  padding: 0 auto;
+  width: 100px;
+  height: 100px;
   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 
