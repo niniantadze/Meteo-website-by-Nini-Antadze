@@ -159,11 +159,21 @@ li {
     rgb(223, 234, 247) 11.2%,
     rgb(244, 248, 252) 91.1%
   );
-  padding: 0 auto;
   margin: 0 auto;
   max-width: 600px;
   border-radius: 20px;
   box-shadow: 2px 8px 23px rgba(0, 0, 0, 0.2);
+  padding: 10px 30px;
+
+  .forecast-weekday {
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
+  .row {
+    margin-bottom: 10px;
+  }
 }
 .forecast-weekday {
   font-size: 20px;
