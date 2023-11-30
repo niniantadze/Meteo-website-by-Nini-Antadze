@@ -49,6 +49,7 @@ function updateWeather(response) {
   } ${date.getHours()}:${date.getMinutes()}`;
   let monthDate = document.querySelector("#month-date");
   monthDate.innerHTML = `${date.getDate()} ${months[date.getMonth()]} `;
+  getForecast(response.data.city);
 }
 
 function searchCity(city) {
@@ -66,7 +67,15 @@ function handleSearchSubmit(event) {
 let searchFormElement = document.querySelector("#search-city");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "fbef01f4et1b02o0d25c27210a43ef3f";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response);
+
   let forecast = document.querySelector("#forecast");
 
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -95,7 +104,5 @@ function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
-
-displayForecast();
 
 searchCity("Warsaw");
